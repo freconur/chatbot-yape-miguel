@@ -1,0 +1,4 @@
+export enum ProyectoUnoActions {
+  GET_VALUES_PROYECTO_UNO="GET_VALUES_PROYECTO_UNO",
+  GET_CUSTOMER="GET_CUSTOMER"
+}
