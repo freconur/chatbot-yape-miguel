@@ -18,12 +18,12 @@ const { getCustomer } = useCustomer()
     if(router.query.id){
       getCustomer(`${router.query.id}`)
     }
-  },[router.query.id])
+  },[router?.query?.id])
 
   return (
     <div className='p-2'>
       <h1 className='w-full text-left text-xl'>
-        <p className='text-slate-500 '>Hola <span className='font-semibold uppercase'>{customer.name} {customer.firstname} {customer.lastname}</span>, te enviamos tu producto, muchas gracias por tu preferencia.</p>
+        <p className='text-slate-500 '>Hola <span className='font-semibold uppercase'>{customer.name} {customer.lastname} {customer.firstname}</span>, te enviamos tu producto, muchas gracias por tu preferencia.</p>
       </h1>
       <div className='mt-5 bg-white shadow-md p-2 rounded-md'>
         <div>
